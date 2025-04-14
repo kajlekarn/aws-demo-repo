@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(WelcomeController.class);
 
+	@GetMapping("/welcome")
 	public ResponseEntity<String> welcome() {
 		LOGGER.info("Welcome Controller called!");
 		return ResponseEntity
